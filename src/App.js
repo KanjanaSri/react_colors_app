@@ -1,10 +1,11 @@
 import Palette from './Palette';
 import seedPalettes from './seedPalettes';
+import { generatePalette } from './colorHelpers';
 
 function App() {
   return (
     <div className="App">
-      <Palette {...seedPalettes[2]}/>
+      <Palette palette={ generatePalette(seedPalettes[2])} />
     </div>
   );
 }
