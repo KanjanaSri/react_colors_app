@@ -22,7 +22,6 @@ function App() {
         <Route path="/palette/:id" element={<PaletteWrapper />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
-      {/* <Palette palette={ generatePalette(seedPalettes[2])} /> */}
     </div>
   );
 }
